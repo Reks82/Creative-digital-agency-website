@@ -1,0 +1,28 @@
+{
+  "name": "creative-digital-agency-website",
+  "version": "1.0.0",
+  "description": "landing page for summary maded on bootstrap 5",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Reks82/Creative-digital-agency-website.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "scss",
+    "bootstrap"
+  ],
+  "author": "Ivan Glemyaznyy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Reks82/Creative-digital-agency-website/issues"
+  },
+  "homepage": "https://github.com/Reks82/Creative-digital-agency-website#readme",
+  "dependencies": {
+    "bootstrap": "^5.0.2"
+  }
+}

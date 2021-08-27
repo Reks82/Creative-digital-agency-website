@@ -1,0 +1,87 @@
+$header-height: 7.25rem;
+
+// header bottom line
+header {
+  background: linear-gradient(180deg, transparent, transparent 7.1875rem, $light-grey 7.1875rem, $light-grey 7.25rem, $primary 7.25rem, $primary);
+  min-height: $header-height;
+}
+
+// header brand
+.navbar-brand {
+  position: relative;
+  display: flex;
+  height: 6.25rem;
+  justify-content: center;
+  align-items: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 1.25rem;
+    left: 0.75rem;
+    width: 4.125rem;
+    height: 4.125rem;
+    background-color: $white-dirt;
+    z-index: 1;
+  }
+}
+
+.brand {
+  position: absolute;
+  left: 0;
+  top: 0.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.125rem;
+  height: 4.125rem;
+  font-size: 1.875rem;
+  font-weight: 700;
+  background-color: $primary;
+  z-index: 2;
+}
+
+// Add bottom line to the active link block
+@include media-breakpoint-up(lg) {
+  .nav-link.active {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translate(0, $header-height * 0.5 - 0.455rem);
+      width: 100%;
+      border-bottom: 0.375rem solid $primary;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .navbar-nav .nav-link {
+    margin-top: 0.5rem;
+   }
+
+  .nav-link.active {
+    border-left: 4px solid $navbar-dark-hover-color;
+  }
+}
+
+.navbar-nav .nav-link {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+// responcive navbar font-size
+@include media-breakpoint-up(xl) {
+  header .nav-link {
+    font-size: 1.25rem;
+  }
+}
+
+.creatives {
+  background-image: url("../img/creatives-background.png");
+  background-size: cover;
+  height: 880px;
+}

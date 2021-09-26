@@ -1,8 +1,8 @@
 .creatives {
   background-image: url("../img/creatives-background.png");
   background-size: cover;
-  height: 55rem;
-  padding-top: 24rem;
+  height: 46rem;
+  padding-top: 18rem;
   text-align: center;
   text-transform: uppercase;
 
@@ -10,15 +10,15 @@
     color: $white-dirt;
     font-family: "Gotham Bold", sans-serif;
     font-weight: bold;
-    letter-spacing: -0.6rem;
+    letter-spacing: -0.2rem;
   }
 
   .paternity {
     color: $primary;
     font-family: "Gotham Medium", sans-serif;
     font-weight: normal;
-    font-size: 1.55rem;
-    letter-spacing: 1.12rem;
+    font-size: 1rem;
+    letter-spacing: 0.6rem;
     padding-left: 1.5rem;
   }
 
@@ -41,7 +41,6 @@
       color: white;
       font-size: 2rem;
       font-weight: 900;
-      
     }
 
     &:hover {
@@ -54,6 +53,23 @@
         animation-iteration-count: infinite;
         animation-timing-function: linear;
       }
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .creatives {
+    height: 55rem;
+    padding-top: 24rem;
+  
+    h1 {
+      font-size: 9.534rem;
+      letter-spacing: -0.6rem;
+    }
+  
+    .paternity {
+      font-size: 1.55rem;
+      letter-spacing: 1.12rem;
     }
   }
 }

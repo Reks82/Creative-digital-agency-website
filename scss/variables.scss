@@ -1,12 +1,21 @@
 
 // Theme colors
 $primary: #11749e;
+$primary-hover: #7fd9ff;
 $secondary: #222222;
 $white-dirt: #f5f5f5;
 $light-grey: #7b7b7b;
 
+//fonts
+$font-family-base: 'Open Sans', sans-serif;
+
+//headings
+$h1-font-size: 9.534rem;
+$headings-line-height: 1.0;
+
 //Navbar
 $navbar-nav-link-padding-x: 1rem;
 $navbar-dark-color: $white-dirt;
-$navbar-dark-hover-color:  #7fd9ff;
+$navbar-dark-hover-color:  $primary-hover;
 $navbar-dark-active-color: $white-dirt;
+$navbar-nav-link-padding-x: 1.3rem;

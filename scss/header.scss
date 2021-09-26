@@ -41,8 +41,8 @@ header {
   z-index: 2;
 }
 
-// Add bottom line to the active link block
 @include media-breakpoint-up(lg) {
+  // Add bottom line to the active link block
   .nav-link.active {
     position: relative;
 
@@ -58,7 +58,20 @@ header {
   }
 }
 
+.navbar-nav .nav-link, .navbar-nav .nav-link.social {
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+}
+
+@include media-breakpoint-up(xl) {
+  .navbar-nav .nav-link.social {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
 @include media-breakpoint-down(lg) {
+  // Add side line to the active link in toggle nav menu
   .navbar-nav .nav-link {
     margin-top: 0.5rem;
    }
@@ -68,20 +81,9 @@ header {
   }
 }
 
-.navbar-nav .nav-link {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 // responcive navbar font-size
 @include media-breakpoint-up(xl) {
   header .nav-link {
     font-size: 1.25rem;
   }
-}
-
-.creatives {
-  background-image: url("../img/creatives-background.png");
-  background-size: cover;
-  height: 880px;
 }

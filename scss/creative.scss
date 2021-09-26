@@ -1,0 +1,82 @@
+.creatives {
+  background-image: url("../img/creatives-background.png");
+  background-size: cover;
+  height: 55rem;
+  padding-top: 24rem;
+  text-align: center;
+  text-transform: uppercase;
+
+  h1 {
+    color: $white-dirt;
+    font-family: "Gotham Bold", sans-serif;
+    font-weight: bold;
+    letter-spacing: -0.6rem;
+  }
+
+  .paternity {
+    color: $primary;
+    font-family: "Gotham Medium", sans-serif;
+    font-weight: normal;
+    font-size: 1.55rem;
+    letter-spacing: 1.12rem;
+    padding-left: 1.5rem;
+  }
+
+  .button_label {
+    margin-top: 5.8rem;
+    font-family: $font-family-base;
+    color: white;
+    font-size: 0.8125rem;
+    text-transform: capitalize;
+  }
+
+  button {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background: none;
+    border: 1px solid white;
+
+    i {
+      color: white;
+      font-size: 2rem;
+      font-weight: 900;
+      
+    }
+
+    &:hover {
+      border-color: $primary-hover;
+
+      i {
+        color: $primary-hover;
+        animation-name: scroll_btn_animation;
+        animation-duration: 0.7s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+    }
+  }
+}
+
+@keyframes scroll_btn_animation {
+
+  0% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(0, 0.35rem);
+  }
+
+  50% {
+    transform: translate(0, 0);
+  }
+
+  75% {
+    transform: translate(0, -0.35rem);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
